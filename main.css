@@ -1,0 +1,238 @@
+html {
+  height: 100%;
+  font-family: sans-serif;
+  color: #333;
+  text-shadow: 0 1px white;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+h1 {
+  font: normal 34px/300px sans-serif;
+  text-align: center;
+  color: #ccc;
+}
+.box {
+  background: hsl(205, 100%, 90%);
+  border: 1px solid hsl(205, 100%, 80%);
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.selected {
+  z-index: 1;
+  background-color: hsl(205, 100%, 80%);
+  border-color: hsl(205, 100%, 70%);
+}
+.guide {
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: hsl(205, 100%, 75%);
+  color: hsl(205, 100%, 75%);
+  z-index: 2;
+}
+.guide.static {
+  background: rgba(0, 0, 0, 0.13);
+  display: none;
+}
+.debug .guide.static {
+  display: block;
+}
+.guide.axis-x {
+  height: 100%;
+  width: 1px;
+}
+.guide.axis-y {
+  height: 1px;
+  width: 100%;
+}
+.distance .label {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: sans-serif;
+}
+.distance.axis-x {
+  height: 1px;
+  margin: 0 5px;
+}
+.distance.axis-y {
+  width: 1px;
+  margin: 5px 0;
+}
+.distance.axis-x .label {
+  text-align: center;
+  margin-top: -12px;
+}
+.distance.axis-y .label {
+  position: absolute;
+  top: 50%;
+  margin-left: 4px;
+  margin-top: -5px;
+}
+.distance:after,
+.distance:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -4px;
+  height: 9px;
+  width: 1px;
+  background: inherit;
+}
+.distance:after {
+  left: auto;
+  right: -1px;
+}
+.distance.axis-y:after,
+.distance.axis-y:before {
+  left: -4px;
+  top: -1px;
+  width: 9px;
+  height: 1px;
+}
+.distance.axis-y:after {
+  top: auto;
+  bottom: -1px;
+}
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+  background: -webkit-linear-gradient(hsl(205, 8%, 95%), hsl(205, 8%, 90%));
+  box-shadow: 0 -1px hsl(205, 8%, 80%) inset, 0 -1px 3px hsl(205, 8%, 83%) inset;
+}
+.controls > div {
+  padding: 8px 13px 7px;
+}
+.container {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+html {
+  height: 100%;
+  font-family: sans-serif;
+  color: #333;
+  text-shadow: 0 1px white;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+h1 {
+  font: normal 34px/300px sans-serif;
+  text-align: center;
+  color: #ccc;
+}
+.box {
+  background: hsl(205, 100%, 90%);
+  border: 1px solid hsl(205, 100%, 80%);
+  position: absolute;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.selected {
+  z-index: 1;
+  background-color: hsl(205, 100%, 80%);
+  border-color: hsl(205, 100%, 70%);
+}
+.guide {
+  left: 0;
+  top: 0;
+  position: absolute;
+  background: hsl(205, 100%, 75%);
+  color: hsl(205, 100%, 75%);
+  z-index: 2;
+}
+.guide.static {
+  background: rgba(0, 0, 0, 0.13);
+  display: none;
+}
+.debug .guide.static {
+  display: block;
+}
+.guide.axis-x {
+  height: 100%;
+  width: 1px;
+}
+.guide.axis-y {
+  height: 1px;
+  width: 100%;
+}
+.distance .label {
+  font-size: 10px;
+  line-height: 10px;
+  font-family: sans-serif;
+}
+.distance.axis-x {
+  height: 1px;
+  margin: 0 5px;
+}
+.distance.axis-y {
+  width: 1px;
+  margin: 5px 0;
+}
+.distance.axis-x .label {
+  text-align: center;
+  margin-top: -12px;
+}
+.distance.axis-y .label {
+  position: absolute;
+  top: 50%;
+  margin-left: 4px;
+  margin-top: -5px;
+}
+.distance:after,
+.distance:before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: -4px;
+  height: 9px;
+  width: 1px;
+  background: inherit;
+}
+.distance:after {
+  left: auto;
+  right: -1px;
+}
+.distance.axis-y:after,
+.distance.axis-y:before {
+  left: -4px;
+  top: -1px;
+  width: 9px;
+  height: 1px;
+}
+.distance.axis-y:after {
+  top: auto;
+  bottom: -1px;
+}
+.controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+  background: -webkit-linear-gradient(hsl(205, 8%, 95%), hsl(205, 8%, 90%));
+  box-shadow: 0 -1px hsl(205, 8%, 80%) inset, 0 -1px 3px hsl(205, 8%, 83%) inset;
+}
+.controls > div {
+  padding: 8px 13px 7px;
+}
+.container {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
